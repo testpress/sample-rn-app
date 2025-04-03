@@ -64,6 +64,8 @@ const DownloadListScreen = ({ navigation }) => {
       <Text style={styles.listItemDetails}>Duration: {item.duration}</Text>
       <Text style={styles.listItemDetails}>Download: {item.percentage}%</Text>
       <Text style={styles.listItemDetails}>Status: {item.status}</Text>
+      <Text style={styles.listItemDetails}>StudentId: {item.metadata.studentId}</Text>
+      <Text style={styles.listItemDetails}>CourseId: {item.metadata.courseId}</Text>
       <View style={styles.actionButtons}>
         {item.status === 'DOWNLOADING' && (
           <>

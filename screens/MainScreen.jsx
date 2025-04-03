@@ -9,10 +9,11 @@ const MainScreen = ({ navigation }) => {
       <Button
         title="Play DRM"
         onPress={() => navigation.navigate('Player', {
-          videoId: '3G2p5NdMaRu',
-          accessToken: '328f6f1c-c188-4c3f-8e38-345c9aaa1a51',
+          videoId: 'AgAFNEJn3kt',
+          accessToken: 'f6823b42-b88f-4935-a351-65f7d5f842d8',
           enableDownload: true,
           autoPlay: false,
+          downloadMetadata: {"courseId":"1", "studentId":"123"}
         })}
       />
 
@@ -20,10 +21,11 @@ const MainScreen = ({ navigation }) => {
       <Button
         title="Play Non-DRM"
         onPress={() => navigation.navigate('Player', {
-          videoId: 'BEArYFdaFbt',
-          accessToken: 'e6a1b485-daad-42eb-8cf2-6b6e51631092',
+          videoId: '7RKQZj4gB2T',
+          accessToken: 'd4986429-20e2-4b21-93ae-c70630a37e06',
           enableDownload: true,
           autoPlay: true,
+          // downloadMetadata: {"courseId":"2", "studentId":"321"}
         })}
       />
 

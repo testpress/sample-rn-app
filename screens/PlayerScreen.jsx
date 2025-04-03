@@ -13,7 +13,7 @@ const { Tpstreams } = NativeModules;
 const eventEmitter = new NativeEventEmitter(Tpstreams);
 
 const PlayerScreen = ({ route }) => {
-  const { videoId, accessToken, enableDownload, autoPlay } = route.params;
+  const { videoId, accessToken, enableDownload, autoPlay, downloadMetadata } = route.params;
   const [isMounted, setIsMounted] = useState(true);
 
   useFocusEffect(
@@ -56,6 +56,7 @@ const PlayerScreen = ({ route }) => {
           accessToken={accessToken}
           enableDownload={enableDownload}
           autoPlay={autoPlay}
+          downloadMetadata={downloadMetadata}
           style={styles.player}
         />
       )}
