@@ -27,6 +27,7 @@ const PlayerScreen = ({ route }) => {
 
   useEffect(() => {
     const eventListeners = [
+      'onPlaybackSpeedChanged',
       'onPlaybackStateChanged',
       'onAccessTokenExpired',
       'onMarkerCallback',
